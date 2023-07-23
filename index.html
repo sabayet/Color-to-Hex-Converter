@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Color to Hex<br>Converter</h1>
+    <hr>
+    <div id="container">
+        <div id="c2">
+<p class="t1">Pick a color ➡️ </p>    <input id="color" type="color">
+</div>
+   
+    <button id="btn" 
+    onclick="changeColor()"
+    >Submit</button>
+   <input type="text" id="text">
+    </div>
+    <script>  
+    function changeColor(){  
+        let x = document.getElementById('color').value;
+          document.getElementById('text').value= x;
+           
+           
+         document.getElementById('container').style.backgroundColor = x;
+}
+
+       
+  
+    </script>
+    
+
+</body>
+
+</html>
